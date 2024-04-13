@@ -1,0 +1,22 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">Shopizza</a>
+    <nav>
+      <ul>
+        <a routerLink="/login">Login</a>
+        <a routerLink="/register">Register</a>
+
+        <a class="sam" routerLink="/dashboard">Krisha</a>
+
+        <li>
+          <a routerLink="/cart-page">
+            Cart
+            <sup class="cartQuantity" *ngIf="cartQuantity">{{
+              cartQuantity
+            }}</sup>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
